@@ -185,3 +185,51 @@
   0%, 100% { transform: translateX(-50%) translateY(0); }
   50% { transform: translateX(-50%) translateY(-10px); }
 }
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .hero {
+    height: 100vh;
+    background-position: top center;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 80px 20px 40px;
+    gap: 30px;
+  }
+
+  .left, .right {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .left h1.st-title {
+    font-size: 48px;
+  }
+
+  .right h1.st-title {
+    font-size: 32px;
+  }
+
+  .left p.st-desc,
+  .right p.st-text {
+    font-size: 16px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .st-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .scroll-indicator {
+    bottom: 20px;
+  }
+}

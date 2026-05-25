@@ -99,3 +99,36 @@
 .play-btn:hover {
   transform: scale(1.1);
 }
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .episodes {
+    padding: 60px 20px;
+    min-height: auto;
+  }
+
+  .section-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .season-tabs {
+    gap: 10px;
+  }
+
+  .season-tab {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .episode-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .play-btn {
+    margin-left: 0;
+    align-self: flex-end;
+  }
+}

@@ -18,3 +18,11 @@
   pointer-events: none;
   z-index: 9998;
 }
+
+/* Hide cursor on mobile */
+@media (max-width: 768px) {
+  .cursor-dot,
+  .cursor-outline {
+    display: none;
+  }
+}

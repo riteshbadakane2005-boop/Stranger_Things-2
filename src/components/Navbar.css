@@ -115,36 +115,48 @@
 /* Responsive */
 @media (max-width: 768px) {
   .navbar {
-    width: 90%;
-    padding: 0 20px;
-    border-radius: 30px;
+    width: 95%;
+    padding: 0 15px;
+    border-radius: 25px;
+    height: 60px;
+  }
+
+  .nav-logo {
+    font-size: 16px;
+    letter-spacing: 1px;
   }
   
   .nav-links, .nav-social {
     position: absolute;
-    top: 72px;
+    top: 60px;
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.95);
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
-    border-radius: 0 0 20px 20px;
+    border-radius: 0 0 15px 15px;
+    padding: 0;
   }
 
   .nav-links.active, .nav-social.active {
-    max-height: 600px;
+    max-height: 800px;
     padding: 20px 0;
   }
 
   .nav-links li a, .nav-social li a {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .nav-toggle {
     display: flex;
+  }
+
+  .nav-toggle .bar {
+    width: 20px;
+    height: 2px;
   }
 }
