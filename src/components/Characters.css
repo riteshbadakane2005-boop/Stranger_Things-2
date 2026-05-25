@@ -1,0 +1,84 @@
+.characters {
+  padding: 100px 50px;
+  background: linear-gradient(180deg, #1a0a0a 0%, #0a0a0a 100%);
+  min-height: 100vh;
+}
+
+.characters-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 48px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 60px;
+  text-shadow: 0 0 10px rgba(179, 0, 0, 0.5);
+}
+
+.characters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.character-card {
+  background: var(--bg-card);
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid rgba(179, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.character-card:hover {
+  box-shadow: 0 10px 40px rgba(179, 0, 0, 0.2);
+}
+
+.character-img {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.character-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.character-card:hover .character-img img {
+  transform: scale(1.1);
+}
+
+.character-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(179, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.character-card:hover .character-overlay {
+  opacity: 1;
+}
+
+.character-overlay span {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.character-card h3 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 24px;
+  color: #fff;
+  padding: 20px;
+  margin: 0;
+}

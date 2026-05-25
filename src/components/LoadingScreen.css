@@ -1,0 +1,35 @@
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+
+.loading-content {
+  text-align: center;
+}
+
+.loading-content h1 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 60px;
+  color: #b30000;
+  text-shadow: 0 0 20px rgba(179, 0, 0, 0.5);
+  letter-spacing: 5px;
+}
+
+.loading-bar {
+  width: 200px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 30px auto;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.loading-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #b30000, #ff4d4d);
+}

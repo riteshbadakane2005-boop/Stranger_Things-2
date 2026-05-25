@@ -1,0 +1,101 @@
+.episodes {
+  padding: 100px 50px;
+  background: linear-gradient(180deg, #0a0a0a 0%, #1a0a0a 100%);
+  min-height: 100vh;
+}
+
+.episodes-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 48px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 60px;
+  text-shadow: 0 0 10px rgba(179, 0, 0, 0.5);
+}
+
+.season-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.season-tab {
+  padding: 12px 30px;
+  background: transparent;
+  color: #fff;
+  border: 2px solid #b30000;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.season-tab:hover,
+.season-tab.active {
+  background: linear-gradient(135deg, #b30000, #8b0000);
+  box-shadow: 0 4px 20px rgba(179, 0, 0, 0.3);
+}
+
+.episodes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.episode-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: var(--bg-card);
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(179, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.episode-item:hover {
+  border-color: rgba(179, 0, 0, 0.3);
+  background: rgba(179, 0, 0, 0.05);
+}
+
+.episode-number {
+  font-size: 14px;
+  color: #b30000;
+  font-weight: 600;
+  min-width: 60px;
+}
+
+.episode-info h3 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.episode-info p {
+  font-size: 14px;
+  color: #a0a0a0;
+}
+
+.play-btn {
+  margin-left: auto;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #b30000, #8b0000);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.play-btn:hover {
+  transform: scale(1.1);
+}
